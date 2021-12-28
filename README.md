@@ -26,7 +26,9 @@ dataset = load_dataset('cnn_dailymail', '3.0.0')
 
 For The New York Times Annotated Corpus: https://catalog.ldc.upenn.edu/LDC2008T19 
 
-## 
+## Files Structure
+
+The files are organized as follows:
 
 ```
 .
