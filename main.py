@@ -134,8 +134,8 @@ for p in range(N):
     fileNameDocument='News'+temp+'.txt'
     fileNameHighlight='Highlight'+'.A.'+temp+'.txt' #model gold
     fileNameMySummary='MySummary.'+temp+'.txt' # system my 
-    #saveFile(directoryDocument,fileNameDocument,dataset['train']['article'][p])
-    #saveFile(directoryHighlights,fileNameHighlight,all_references[p])
+    saveFile(directoryDocument,fileNameDocument,dataset['test']['article'][p])
+    saveFile(directoryHighlights,fileNameHighlight,all_references[p])
     saveFile(directoryMySummaries,fileNameMySummary,all_hypothesis[p])
     print(p+1)
 
