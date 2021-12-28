@@ -1,6 +1,6 @@
 # GUSUM
 
-This is an implementation of the  GUSUM ( as shorthand for Graph-Based Unsupervised Summarization) which a simple, yet effective approach to improving the state of the art in graph-based unsupervised extractive text summarization.  described in xxxxxxx
+This is an implementation of the  GUSUM ( as shorthand for Graph-Based Unsupervised Summarization) which a simple, yet effective approach to improving the state of the art in graph-based unsupervised extractive text summarization.
 
 ## Installation
 
