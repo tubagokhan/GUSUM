@@ -1,0 +1,572 @@
+{
+"README": "This QA test set is intended for QA paradigm-based human evaluation in text summarization. We created 71 questions from 20 randomly selected documents for the CNN/DM datasets and 59 questions from 18 randomly selected documents for the NYT dataset.For The CNN / DailyMail Dataset: https://huggingface.co/datasets/cnn_dailymaildataset  (version 3.0.0,  For The New York Times Annotated Corpus: https://catalog.ldc.upenn.edu/LDC2008T19 ",
+
+  "CNN/DM": {
+    "Document1": {
+      "DocumentID": "36",
+      "GoldenSummary": " French investigators: Flight data recorder reveals Andreas Lubitz acted deliberately to crash plane .He used autopilot to set altitude at 100 feet and then used the controls to speed up the descent .",
+      "Questions": {
+        "1": "In which country did the plane crash occur?",
+        "2": "Is the cause of the accident thought to be a technical error or deliberate?"
+      },
+      "Answers": {
+        "1": "France",
+        "2": "Deliberate"
+      }
+    },
+    "Document2": {
+      "DocumentID": "97",
+      "GoldenSummary": " Robert Bates said he meant to subdue a suspect with a Taser but accidentally shot him . The preliminary hearing is scheduled for July 2 . The judge said Bates was free to travel to the Bahamas for a family vacation .",
+      "Questions": {
+        "1": "What did he try to subdue the man with?",
+        "2": "Where the judge said he was free to go?"
+      },
+      "Answers": {
+        "1": "Taser",
+        "2": "Bahamas"
+      }
+    },
+    "Document3": {
+      "DocumentID": "162",
+      "GoldenSummary": " NBA player Jeff Green had open heart surgery to repair an aortic aneurysm in 2011 . Green missed the entire 2011-2012 basketball season . Now he donates time to young cardiovascular patients .",
+      "Questions": {
+        "1": "Which NBA player had surgery?",
+        "2": "Why did he have surgery?"
+      },
+      "Answers": {
+        "1": "Jeff Green",
+        "2": "to repair his heart or to repair an aortic aneurysm"
+      }
+    },
+    "Document4": {
+      "DocumentID": "203",
+      "GoldenSummary": " Kenyans gather in Nairobi to remember victims of a terrorist attack that stunned a nation . The attack at a Garissa university last week killed 147 people, mostly students .",
+      "Questions": {
+        "1": "Which nation gathered for commemoration?",
+        "2": "What event did they hold a commemorate cerenomy for?",
+		"3": "Where did they meet?",
+		"4": "Where did the attack take place?",
+		"5": "How many people died?"
+      },
+      "Answers": {
+        "1": "Kenya",
+        "2": "Terrorist attack",
+		"3": "Nairobi",
+		"4": "Garissa university",
+		"5": "147"
+      }
+    },
+    "Document5": {
+      "DocumentID": "220",
+      "GoldenSummary": " Authorities identify the deceased passenger as 36-year-old Gary Terry . Authorities say the driver, 24-year-old Tavon Watson, lost control of a Lamborghini. The crash occurred at the Exotic Driving Experience at Walt Disney World Speedway .",
+      "Questions": {
+        "1": "What is the brand of the car that crashed?",
+        "2": "What is the name of the passenger who lost his life?",
+		"3": "Where did the accident occur?"
+      },
+      "Answers": {
+        "1": "Lamborghini",
+        "2": "Gary Terry",
+		"3": "at Walt Disney World Speedway "
+      }
+    },
+    "Document6": {
+      "DocumentID": "709",
+      "GoldenSummary": " \"Real Housewives of Beverly Hills\" star Kim Richards was arrested early Thursday morning . Beverly Hills police say Richards wouldn't leave a hotel when asked and later struck an officer .",
+      "Questions": {
+        "1": "Who was arrested?",
+        "2": "When she was arrested?",
+		"3": "Which program's star was arrested?"
+      },
+      "Answers": {
+        "1": "Kim Richards",
+        "2": "Thursday morning",
+		"3": "Real Housewives of Beverly Hills"
+      }
+    },
+    "Document7": {
+      "DocumentID": "959",
+      "GoldenSummary": " In a few years, the military will be unable to recruit enough qualified soldiers because of America's obesity problem . Carol Costello: We have a serious national security issue at hand, but it's within our control if we could own up to it .",
+      "Questions": {
+        "1": "What is the main reason why the army cannot recruit?",
+        "2": "Which government agency is concerned?"
+      },
+      "Answers": {
+        "1": "obesity",
+        "2": "military"
+      }
+    },
+    "Document8": {
+      "DocumentID": "1186",
+      "GoldenSummary": " Messi completed a light training session at Barcelona on Thursday . He has almost recovered from a foot injury sustained in Clasico with Real . Argentina star sat out friendly matches with El Salvador and Ecuador . Barcelona hoping to maintain La Liga lead against Celta Vigo . Luis Enrique's team remain on course for the Treble .",
+      "Questions": {
+        "1": "Who is the footballer who suffered from foot injury?",
+        "2": "Which teams did the footballer play in the friendlies?",
+		"3": "Which team is the player aiming to play against in the La Liga league?"
+      },
+      "Answers": {
+        "1": "Messi",
+        "2": "Not Given",
+		"3": "Celta Vigo"
+      }
+    },
+    "Document9": {
+      "DocumentID": "1435",
+      "GoldenSummary": " Kelly Nash, 25, went missing from his Buford, Georgia home January 5 . Nash left the house without his wallet, car keys or ID, but a 9mm handgun went missing from his house that night . A fisherman came upon Kelly Nash's decomposed body in Lake Lanier in early February . Sheriff's officials said the 25-year-old accounting student suffered a gunshot wound and drowned .",
+      "Questions": {
+        "1": "What is the name of the missing person?",
+        "2": "How old is the missing person?",
+		"3": "When was the last time the missing person was seen?",
+		"4": "Was the missing person alive when found?",
+		"5": "How was she killed?"
+      },
+      "Answers": {
+        "1": "Kelly Nash",
+        "2": "25",
+		"3": "January 5",
+		"4": "No",
+		"5": "a gunshot wound and drowned"
+      }
+    },
+    "Document10": {
+      "DocumentID": "2005",
+      "GoldenSummary": " World champion hurdler Jana Pittman has given birth to her second child . Her daughter Emily was born on Monday, weighing in at 3.1 kilograms . Just a day before, Pittman was filmed in training for the 2016 Rio Olympics . She trained throughout her pregnancy with her first child, son Cornelis . Pittman aims to be back training in May and looks to compete at Beijing .",
+      "Questions": {
+        "1": "Who is the world champion who gave birth?",
+        "2": "How many children does the champion have?",
+		"3": "Which competition the athlete is preparing for?",
+		"4": "Did the Champion participate in her training during pregnancy?"
+      },
+      "Answers": {
+        "1": "Jana Pittman",
+        "2": "Two",
+		"3": "2016 Rio Olympics",
+		"4": "Yes"
+      }
+    },
+    "Document11": {
+      "DocumentID": "2625",
+      "GoldenSummary": " Graffiti artists work through the night to repaint 30 telephone booths . Latest in series of Baymax-themed stunts as character craze sweeps China . Artists wanted to help burned-out Beijing residents feel less stressed .",
+      "Questions": {
+        "1": "What items graffiti artists worked to paint?",
+        "2": "How many items have been painted?",
+		"3": "What is the theme?",
+		"4": "Where the event was held?"
+      },
+      "Answers": {
+        "1": "telephone booths",
+        "2": "30",
+		"3": "Baymax",
+		"4": "Beijing"
+      }
+    },
+    "Document12": {
+      "DocumentID": "3472",
+      "GoldenSummary": " Saracens face Clermont in the Champions Cup semi-final on April 18 . Sarries defeated Clermont 46-6 at the same stage last season . Owen Farrell has been out of action since January with a knee injury .",
+      "Questions": {
+        "1": "Which team will Saracens face?",
+        "2": "Who is injured?"
+      },
+      "Answers": {
+        "1": "Clermont",
+        "2": "Owen Farrell"
+      }
+    },
+    "Document13": {
+      "DocumentID": "4480",
+      "GoldenSummary": " Spencer Gerlach, 20, admitted to stabbing his ex-wife Keltsie Gerlach to death as their 15-month-old daughter slept in the next room . The baby girl was unharmed and was taken into custody by Child Services . The cause of argument that led to the murder is unknown . Spencer faces first-degree murder charges and was booked at Elder County Jail .",
+      "Questions": {
+        "1": "What is the name of the criminal?",
+        "2": "How old is the criminal?",
+		"3": "What is the name of the victim?",
+		"4": "What is crime?",
+		"5": "What is the relationship between the victim and the killer?",
+		"6": "How old are the couple's babies?"
+      },
+      "Answers": {
+        "1": "Spencer Gerlach",
+        "2": "20",
+		"3": "Keltsie Gerlach",
+		"4": "murder",
+		"5": "divorced marriage ",
+		"6": "15-month-old"
+      }
+    },
+    "Document14": {
+      "DocumentID": "5633",
+      "GoldenSummary": " Zeta Beta Tau students are being investigated for the 'disgusting' acts . Have been accused of the deplorable acts at the Warrior Beach Retreat . Is designed to give ex-servicemen a relaxing break in Panama City, Florida . University of Florida and Emory University branches were there at the time . They allegedly ripped flags off cars and threw items off balconies . Three students from University of Florida have been expelled . Both fraternities have suspended all of their university activities .",
+      "Questions": {
+        "1": "Which students were charged?",
+        "2": "Which universities are the students from?",
+		"3": "Where did the event take place?",
+		"4": "Who was attacked?",
+		"5": "During which organization did the attack take place?"
+      },
+      "Answers": {
+        "1": "Zeta Beta Tau ",
+        "2": "University of Florida and Emory University",
+		"3": "Panama City",
+		"4": "ex-servicemen",
+		"5": "the Warrior Beach Retreat"
+      }
+    },
+    "Document15": {
+      "DocumentID": "6275",
+      "GoldenSummary": " Jamar Nicholson, 15, was shot in the back by officer Miguel Gutierrez on February 10 because his friend was holding a toy gun . Nicholson and his friend Jason Huerta, 17, are suing the city of Los Angeles for $20m . Officer Miguel Gutierrez who shot Nicholson has returned to duty but the incident is under investigation .",
+      "Questions": {
+        "1": "What is the name of the person shot?",
+        "2": "How old is the person shot?",
+		"3": "For which item was he shot?",
+		"4": "What is the name of the officer who shot him?"
+      },
+      "Answers": {
+        "1": "Jamar Nicholson",
+        "2": "15",
+		"3": "a toy gun",
+		"4": "Miguel Gutierrez"
+      }
+    },
+    "Document16": {
+      "DocumentID": "7184",
+      "GoldenSummary": " Brenna Happy Cloud of Salem, Oregon, has accused Facebook of discrimination after her account was suspended . The Native American woman has been forced to use a different surname in order to regain access to her list of over 1,000 online friends . 'Other people can use their nicknames, inappropriate names, but I can't use my real name,' she said . Happy Cloud believes her Native American heritage has been undermined by Facebook's discriminatory policies .",
+      "Questions": {
+        "1": "Who is the person whose account was suspended?",
+        "2": "What is the ethnic origin of the person whose account was suspended?",
+		"3": "What did the woman accuse Facebook?"
+      },
+      "Answers": {
+        "1": "Brenna Happy Cloud",
+        "2": "Native American",
+		"3": "discrimination"
+      }
+    },
+    "Document17": {
+      "DocumentID": "7781",
+      "GoldenSummary": " 1.9 million foreigners are likely to be in the country at any one time in 2015 . This includes students, tourists and workers on short term visas . While permanent migrants is likely to exceed record of 185,000 set in 1969 . The current visa figures compare to those in the aftermath of World War II .",
+      "Questions": {
+        "1": "What is the largest recorded permanent immigrant population?",
+        "2": "In which year was the biggest immigration record observed?",
+		"3": "Which war period does the current situation compare to?",
+		"4": "Is the immigrant population expected to increase?"
+      },
+      "Answers": {
+        "1": "185000",
+        "2": "1969",
+		"3": "World War II",
+		"4": "Yes"
+      }
+    },
+    "Document18": {
+      "DocumentID": "8049",
+      "GoldenSummary": " More than 20,000 passed ten or more GCSEs with A or A* in last five years . One in 30 children who sat the exams ended up with at least ten A grades . Figures suggest UK's most able pupils are increasingly getting top marks .",
+      "Questions": {
+        "1": "Which exam did the children take?",
+        "2": "How many students passed with A and A+?",
+		"3": "How many years are these statistics for?",
+		"4": "Has success performance increased in the exam?"
+      },
+      "Answers": {
+        "1": "GCSE",
+        "2": "More than 20,000",
+		"3": "five years",
+		"4": "Yes"
+      }
+    },
+    "Document19": {
+      "DocumentID": "9404",
+      "GoldenSummary": " Osman Yaya, 12, from Bennett Middle School in Salisbury, Maryland,  moderated a town hall session with the president on Thursday . During an answer about writer's block, Obama started getting a little long-winded and Osman stepped in . 'Yeah. I think you've sort of covered everything about that question,' he said as the audience laughed . Obama grinned and replied, 'Osman thinks I've been talking too long'",
+      "Questions": {
+        "1": "What is the name of the moderator?",
+        "2": "How old is the moderator?",
+		"3": "Where did the session take place?",
+		"4": "Which president attended the meeting?"
+      },
+      "Answers": {
+        "1": "Osman Yaya",
+        "2": "12",
+		"3": "Bennett Middle School in Salisbury",
+		"4": "Obama"
+      }
+    },
+    "Document20": {
+      "DocumentID": "10281",
+      "GoldenSummary": " Kealeigh-Anne Woolley was 7 months old when Colin Heath shook her . Violent incident left her blind, unable to talk and severely brain damaged . Spent most of her life in a wheelchair and could only eat through a tube . Heath was jailed for manslaughter at Birmingham Crown Court today .",
+      "Questions": {
+        "1": "What is the victim's name?",
+        "2": "How old was the victim?",
+		"3": "What is the name of the criminal?",
+		"4": "What damage was done as a result of violence?"
+      },
+      "Answers": {
+        "1": "Kealeigh-Anne Woolley",
+        "2": "7 months old",
+		"3": "Colin Heath",
+		"4": "blind, unable to talk and severely brain damaged"
+      }
+    }
+  },
+  "NYT": {
+    "Document1": {
+      "DocumentID": "1815776",
+      "GoldenSummary": " Editorial holds that Congress understood special plight of handicapped immigrants who are granted asylum and made sure they are entitled to monthly disability benefits of $603 each as they go through citizenship process; notes that over 6,000 people have had their benefits cut off because they exceeded seven-year deadline Congress set for obtaining citizenship; maintains that handicapped immigrants are special cases who do not deserve loss of benefits in crush of antiterrorist concerns",
+	    "Questions": {
+        "1": "Who has been received asylum to enter the United States?",
+        "2": "How much monthly payment has it been decided to pay immigrants?",
+		"3": "How many years is the social assistance period determined by the congress?",
+		"4": "How many immigrants have been cut off because of the statute of limitations?"
+      },
+      "Answers": {
+        "1": "handicapped immigrants",
+        "2": "$603",
+		"3": "seven-year",
+		"4": "over 6,000 people"
+      }
+    },
+    "Document2": {
+      "DocumentID": "1815906",
+      "GoldenSummary": " Moviegoers favored films that were escapist fantasies in 2006; Sony Pictures was winner among studios, earning nearly $1.7 billion domestically and $3.3 billion overseas; Pirates of the Caribbean: Dead Man's Chest set new opening-weekend record and topped box office tables with $423 million; other high grossing films included Click, Talladega Nights: The Ballad of Ricky Bobby, Open Season, Casino Royale and The Pursuit of Happyness; photos (M)",
+      "Questions": {
+        "1": "Which movie has the opening-weekend record?",
+        "2": "How much did the movie make?"
+      },
+      "Answers": {
+        "1": "Pirates of the Caribbean: Dead Man's Chest",
+        "2": "$423 million"
+      }
+    },
+    "Document3": {
+      "DocumentID": "1816506",
+      "GoldenSummary": " Bankruptcy filing by book distributor Advanced Marketing Services deals financial blow to book industry; Advanced reports more than $200 million in debt to dozens of publishers, both large and small, such as Random House and Good Books; filing means that publishers might not recover much of what is owed; photo (M)",
+      "Questions": {
+        "1": "What is the name of book distributor?",
+        "2": "How much is the debt amount?"
+      },
+      "Answers": {
+        "1": "Advanced Marketing Services",
+        "2": "more than $200 million"
+      }
+    },
+    "Document4": {
+      "DocumentID": "1819180",
+      "GoldenSummary": " Team of researchers report on practical medical applications of plants described in, The Ambonese Herbal, 17th-century text by Georg Eberhard Rumpf; Dr Eric J Buenz, Mayo Clinic College of Medicine ethnobotanist, leads research that focuses on atun tree of of Samoa; finds that leaves and seed kernels have antibacterial effects and suggests they may be developed into powerful antibiotics; photos; drawings (M)",
+      "Questions": {
+        "1": "What is the name of the book that the researchers reported on?",
+        "2": "Who is the author of the book?"
+      },
+      "Answers": {
+        "1": "The Ambonese Herbal",
+        "2": "Georg Eberhard Rumpf"
+      }
+    },
+    "Document5": {
+      "DocumentID": "1823065",
+      "GoldenSummary": " Florida state Judge Robert J Morris Jr dismisses contempt of court charges and $80,000 in fines against Florida Department of Children and Families and its former secretary, ending court battle over handling of dozens of mentally ill inmates who have been housed in county jails while waiting for state hospital beds (S)",
+      "Questions": {
+        "1": "What is the name of the judge?",
+        "2": "Against whom did the judge dismiss the charges?",
+		"3": "How much of a fine was refused?",
+		"4": "What is the subject of the case?"
+      },
+      "Answers": {
+        "1": "Robert J Morris Jr",
+        "2": "Florida Department of Children and Families",
+		"3": "$80,000",
+		"4": "handling of dozens of mentally ill inmates"
+      }
+    },
+    "Document6": {
+      "DocumentID": "1829431",
+      "GoldenSummary": " Suicide bomber blows himself up outside gate of US air base at Bagram, Afghanistan, during Vice Pres Cheney's overnight stay there; 23 people killed include American soldier and contractor, South Korean soldier and Afghan truck drivers and laborers; photo; Taliban claims responsibility; attack lays bare rising insecurity as US and NATO forces battle insurgency; Cheney's arrival and delay because of heavy snow were well reported and attack may have been arranged quickly for propaganda value; he hears loud boom in his room and is moved to bunker (M)",
+      "Questions": {
+        "1": "In which city did the attack take place?",
+        "2": "Where exactly did the attack take place?",
+		"3": "How many people died?",
+		"4": "Who died in the attack?",
+		"5": "Who took the responsibility?",
+		"6": "What do the attacks show?"
+      },
+      "Answers": {
+        "1": "Bagram",
+        "2": "outside gate of US air base",
+		"3": "23 people",
+		"4": "American soldier and contractor, South Korean soldier and Afghan truck drivers and laborers",
+		"5": "Taliban",
+		"6": "rising insecurity"
+      }
+    },
+    "Document7": {
+      "DocumentID": "1831640",
+      "GoldenSummary": " Harvey R Miller, 74, most prominent bankruptcy lawyer in nation, has left investment bank Greenhill & Co to return to Weil, Gotshal & Manges, Manhattan law firm where he practiced for 32 years; Miller performed advisory work at Greenhill rather than legal work; Miller made Weil, Gotshal powerhouse in bankruptcy law over three decades; he comments; photo (L)",
+      "Questions": {
+        "1": "What is the name of the lawyer mentioned in the news?",
+        "2": "From which firm did the lawyer leave?",
+		"3": "Which firm did the lawyer return to?",
+		"4": "How many years has the lawyer worked at the firm to which he returned?",
+		"5": "In which field did the lawyer work in the company he left?",
+		"6": "What is the lawyer's area of expertise?"
+      },
+      "Answers": {
+        "1": "Harvey R Miller",
+        "2": "Greenhill & Co",
+		"3": "Weil, Gotshal & Manges",
+		"4": "32",
+		"5": "advisory work",
+		"6": "bankruptcy"
+      }
+    },
+    "Document8": {
+      "DocumentID": "1836000",
+      "GoldenSummary": " New studies show that torcetrapib, experimental heart drug abandoned in Dec by Pfizer because of safety problems, failed to reduce plaque that clogs arteries even though it raised so-called good cholesterol; scientific and pharmaceutical communities had wondered if torcetrapib problems were specific to that drug, or to entire approach used by drug; new studies may doom similar drugs under development by Merck, Roche and Pfizer itself; more analysis of Pfizer's failed trial is needed before decision can be made (M)",
+      "Questions": {
+        "1": "What is the name of the company that produces the drug?",
+        "2": "What are the safety problems that cause the drug to be abandoned?",
+		"3": "What is the name of heart drug?",
+		"4": "Is the approach used to develop this drug also used by other pharmaceutical companies?"
+      },
+      "Answers": {
+        "1": "Pfizer",
+        "2": "failed to reduce plaque that clogs arteries",
+		"3": "torcetrapib",
+		"4": "Yes"
+      }
+    },
+    "Document9": {
+      "DocumentID": "1836871",
+      "GoldenSummary": " Food and Drug Administration has not found rat poison in pet food that has been killing cats and dogs, but it has found melamine, chemical commonly used to make plastic cutlery that is also used in fertilizer; nationwide pet food recall, which has involved wet foods--all manufactured by Menu Foods and sold under variety of brand names--is expanded to include one brand of dry cat food made by Hills Pet Nutrition; brand was found to have been made with batch of wheat gluten shipped to US from China that FDA says was laced with melamine; photo (M)",
+      "Questions": {
+        "1": "What did the Food and Drug Administration find in pet food?",
+        "2": "What did not the Food and Drug Administration find in pet food? ",
+		"3": "Normally, why is Melamine used?"
+      },
+      "Answers": {
+        "1": "melamine",
+        "2": "rat poison",
+		"3": "to make plastic cutlery"
+      }
+    },
+    "Document10": {
+      "DocumentID": "1839150",
+      "GoldenSummary": " Thirteen prisoners at Guantanamo Bay, Cuba, are said to be engaged in long-term hunger strike, subjecting themselves to daily force-feeding; lawyers for several of them say their clients' actions are driven by harsh conditions in new maximum security complex, where 160 of 385 Guantanamo detainees have been moved since Dec; military broke last large hunger strike, in early 2006, with new policy of strapping prisoners into chairs while they are fed by plastic tubes inserted through their nostrils; hunger strikers' persistence underscores how struggle between detainees and guards at Guantanamo has continued even as military tightens its control; military spokesman at Guantanamo downplays significance of current strike, calling prisoners' complaints 'propaganda'; graph charting number of hunger strikes since Jan 2006 (M)",
+      "Questions": {
+        "1": "Where is the prison mentioned in the news?",
+        "2": "Which kind of strike did the prisoners take?",
+		"3": "What are the reasons for strikes?"
+      },
+      "Answers": {
+        "1": "Guantanamo Bay, Cuba",
+        "2": "hunger",
+		"3": "harsh conditions"
+      }
+    },
+    "Document11": {
+      "DocumentID": "1842295",
+      "GoldenSummary": " Russian government allies who took over control of Russian News Service have decreed at least 50 percent of reports about Russia must be positive, opposition leaders cannot be mentioned on air and United States is to be portrayed as enemy; radio news had been bright spot in darkening Russian media landscape; new campaign appears aimed at tying up loose ends ahead of elections; photo (L)",
+      "Questions": {
+        "1": "How must be at least 50 percent of the reports about Russia?",
+        "2": "Who cannot be mentioned on air?",
+		"3": "How is United States to be portrayed ?"
+      },
+      "Answers": {
+        "1": "positive",
+        "2": "opposition leaders",
+		"3": "as enemy"
+      }
+    },
+    "Document12": {
+      "DocumentID": "1844410",
+      "GoldenSummary": " Former World Bank officials Ad Melkert and Roberto Danino dispute contention of president Paul D Wolfowitz that they and others knew about his actions on behalf of his companion, Shaha Ali Riza, who was employed there when he joined bank in 2005; bank committee testimony details great discord at highest levels of bank after Wolfowitz became president (M)",
+      "Questions": {
+        "1": "Who is the Former World Bank officials?",
+        "2": "Who did they make a statement about?",
+		"3": "What did they make statements against?"
+      },
+      "Answers": {
+        "1": "Ad Melkert",
+        "2": "Paul D Wolfowitz",
+		"3": "they and others knew about his actions on behalf of his companion"
+      }
+    },
+    "Document13": {
+      "DocumentID": "1844894 ",
+      "GoldenSummary": " Common genetic variation that increases risk of heart disease up to 60 percent in people of European descent is discoverd by two rival teams of scientists; scientists hope to develop test for variant to enable doctors to assess risk more accurately and recommend early interventions; heart disease is leading cause of death worldwide; new finding published online in journal Science is one of spate of discoveries about genetic bases of common diseases; discoveries are fruit of $3 billion Human Genome Project (M)",
+      "Questions": {
+        "1": "What has been discovered in people of European descent?",
+        "2": "What is the percent increased risk of heart disease in people of European descent?",
+		"3": "What do scientists hope for with the test they developed?"
+      },
+      "Answers": {
+        "1": "Common genetic variation that increases risk of heart disease",
+        "2": "up to 60 percent",
+		"3": "to enable doctors to assess risk more accurately and recommend early interventions"
+      }
+    },
+    "Document14": {
+      "DocumentID": "1848311",
+      "GoldenSummary": " Bernard Kouchner, France's new foreign minister, is in many ways political opposite of Pres Nicolas Sarkozy; Kouchner has been popular politician on left over years; Sarkozy, by naming him to his conservative government, has stripped Socialist Party of one of its icons just weeks before French voters choose new Parliament; Kouchner photo (M)",
+      "Questions": {
+        "1": "Who is the foreign minister?",
+        "2": "Who is the President?",
+		"3": "Do the president and the foreign minister have different political views?"
+      },
+      "Answers": {
+        "1": "Bernard Kouchner",
+        "2": "Nicolas Sarkozy",
+		"3": "Yes"
+      }
+    },
+    "Document15": {
+      "DocumentID": "1850420",
+      "GoldenSummary": " Tony Jack, whose mother raised three children as single parent and earns $26,000 a year as school security guard, will graduate with honors from Amherst College; he is success story in effort by Amherst and growing number of elite colleges to open their doors to talented low-income students; about two dozen schools, concerned that barriers to elite institutions are being increasingly drawn along class lines, are actively recruiting low-income students and considering economic status when making admissions decisions; Jack, who is black, was Amherst's nominee to be Rhodes scholar; photos (M)",
+      "Questions": {
+        "1": "What degree did Jack graduate with?",
+        "2": "Which college did Jack graduate from?",
+		"3": "Which students do elite colleges allow?"
+      },
+      "Answers": {
+        "1": "honors",
+        "2": "Amherst",
+		"3": "talented low-income students"
+      }
+    },
+    "Document16": {
+      "DocumentID": "1851447",
+      "GoldenSummary": " Maj Gen Richard A Huck, who was in charge of Marine division in Iraq when infantrymen killed 24 civilians in Haditha in Nov 2005, says that all his superiors, including Gen George W Casey Jr, top commander in Iraq, knew of event in hours; testifies, via video link from Pentagon on third day of hearing at Camp Pendleton, Calif, for Lt Col Jeffrey R Chessani, one of four Marine officers charged with dereliction of duty in case (M)",
+      "Questions": {
+        "1": "How many civilians were killed?",
+        "2": "Where did the event take place?",
+		"3": "Who is charged?"
+      },
+      "Answers": {
+        "1": "24",
+        "2": "Haditha",
+		"3": "Richard A Huck"
+      }
+    },
+    "Document17": {
+      "DocumentID": "1854237",
+      "GoldenSummary": " Math scores for students in New York State improve significantly in every grade tested, driven by sizable gains in New York City, according to results of annual statewide math exam; New York City's increases are larger than those in any other big-city school district except Syracuse and show city nearing statewide performance average; Mayor Michael R Bloomberg cites results as evidence of success of his education policies; some say city was so far behind it could only improve; one of most impressive achievements for city was that students improved as they moved from grade to grade, defying historic trend of proficiency levels dropping as students age; graph of math achievements in New York State and New York City (M)",
+      "Questions": {
+        "1": "Which course scores are mentioned?",
+        "2": "Which city performs less as an exception?"
+      },
+      "Answers": {
+        "1": "Math",
+        "2": "Syracuse"
+      }
+    },
+    "Document18": {
+      "DocumentID": "1855193",
+      "GoldenSummary": " Tom Oreck, chief executive of vacuum cleaner company, has bought mansion in Nashville that was once owned by late Grand Ole Opry star Minnie Pearl, rekindling speculation that company might move its headquarters from New Orleans to Tennessee; Oreck says official headquarters of company is still in New Orleans although he and his family will move to Nashville; photo (S)",
+      "Questions": {
+        "1": "Who is the chief executive of vacuum cleaner company?",
+        "2": "Where is his new mansion?",
+		"3": "Who is the old owner of the mansion?"
+      },
+      "Answers": {
+        "1": "Tom Oreck",
+        "2": "Nashville",
+		"3": "Minnie Pearl"
+      }
+    }
+  }
+}
