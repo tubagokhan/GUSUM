@@ -1,6 +1,6 @@
 # GUSUM
 
-This is an implementation of the  GUSUM ( as shorthand for Graph-Based Unsupervised Summarization) which a simple, yet effective approach to improving the state of the art in graph-based unsupervised extractive text summarization.
+This is an implementation of the  GUSUM ( as shorthand for Graph-Based Unsupervised Summarization) which a simple, yet effective approach to improving the state of the art in graph-based unsupervised extractive text summarization. Full Paper: https://aclanthology.org/2022.textgraphs-1.5
 
 ## Installation
 
@@ -75,10 +75,19 @@ evaluator = rouge.Rouge(metrics=['rouge-n', 'rouge-l', 'rouge-w'],
 
 ## Citation
 ```
-@ inproceedings{ 
-
-
+@InProceedings{gokhan-smith-lee:2022:textgraphs,
+  author    = {Gokhan, Tuba  and  Smith, Phillip  and  Lee, Mark},
+  title     = {GUSUM: Graph-based Unsupervised Summarization Using Sentence Features Scoring and Sentence-BERT},
+  booktitle      = {Proceedings of TextGraphs-16: Graph-based Methods for Natural Language Processing},
+  month          = {October},
+  year           = {2022},
+  address        = {Gyeongju, Republic of Korea},
+  publisher      = {Association for Computational Linguistics},
+  pages     = {44--53},
+  abstract  = {Unsupervised extractive document summarization aims to extract salient sentences from a document without requiring a labelled corpus. In existing graph-based methods, vertex and edge weights are usually created by calculating sentence similarities. In this paper, we develop a Graph-Based Unsupervised Summarization(GUSUM) method for extractive text summarization based on the principle of including the most important sentences while excluding sentences with similar meanings in the summary. We modify traditional graph ranking algorithms with recent sentence embedding models and sentence features and modify how sentence centrality is computed. We first define the sentence feature scores represented at the vertices, indicating the importance of each sentence in the document. After this stage, we use Sentence-BERT for obtaining sentence embeddings to better capture the sentence meaning. In this way, we define the edges of a graph where semantic similarities are represented. Next we create an undirected graph that includes sentence significance and similarities between sentences. In the last stage, we determine the most important sentences in the document with the ranking method we suggested on the graph created. Experiments on CNN/Daily Mail, New York Times, arXiv, and PubMed datasets show our approach achieves high performance on unsupervised graph-based summarization when evaluated both automatically and by humans.},
+  url       = {https://aclanthology.org/2022.textgraphs-1.5}
 }
+
 ```
 
 
